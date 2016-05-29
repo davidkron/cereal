@@ -96,7 +96,7 @@
 //! Declares and adds all items in a member variable declaration list to a serialize function
 /*! The arguments should provide a type in parenthesis along with a name.
 
-    Example:
+    -- Example --
 
     struct Car{
         SERIALIZABLE
@@ -107,7 +107,7 @@
         )
     };
 
-    Would expand to:
+    -- Would expand to --
 
     struct Car{
         std::string name;
