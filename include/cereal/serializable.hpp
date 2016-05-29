@@ -130,15 +130,4 @@ void serialize( Archive & ar ) const { \
   ar( UNZIP(MAKE_NVP_FOR_ALL_NAMES_IN_MEMBERDECLLIST(__VA_ARGS__))); \
 }
 
-
-struct FakeStruct {
-    SERIALIZABLE
-    (
-            (std::string) name,
-            (int) age,
-            (bool) isBest,
-            (std::vector<int>) vectra
-    )
-};
-
 #endif //CEREAL_SERIALIZABLE_HPP_
